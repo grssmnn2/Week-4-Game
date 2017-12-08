@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+h1, h4, p{
+    font-family: 'Amatic SC', cursive;
+}
+
+h1{
+    font-size: 75px;
+}
+
+h4{
+    font-size: 50px;
+}
+
+p{
+    font-size: 30px;
+}
+
+
+img{
+    height: 25%;
+    width: 25%;
+}
+
+button{
+    width: 25%;
+    height: 25%;
+    background-color: white;
+    border-style: none;
+    float: left;
+    padding: 0px;
+}
