@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystal Game</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row">
-            <div class="col">
-         <!-- CrystalsCollector Title Div -->
-                <div id = "titleDiv">
-                <h1>Crystal Collector</h1>
-                 </div>
+            <div class="col-md-4">
+                <!-- CrystalsCollector Title Div -->
+                <div id="titleDiv">
+                    <h1>Crystal Collector</h1>
+                </div>
 
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
+
+
+            <div class="col-md-8">
                 <!-- Main div with game information/rules -->
-                <div id = "gameRulesDiv">
-                <h4>Game Information</h4>
-                <p>Click a crystal below to begin counting.</p>
-                <p>Your goal is to match the computer's choice by clicking each crystal to increase your score.</p>
-                <p>You win once you equal the computer's choice, go over and you lose.</p>
-                <p>Your score is visible at the bottom of the page.</p>
-                <p>Happy guessing!</p>
+                <div id="gameRulesDiv">
+                    <h4>Game Information</h4>
+                    <p>Click a crystal below to begin counting.</p>
+                    <p>Your goal is to match the computer's choice by clicking each crystal to increase your score.</p>
+                    <p>You win once you equal the computer's choice, go over and you lose.</p>
+                    <p>Happy guessing!</p>
 
                 </div>
             </div>
         </div>
-
-    <!-- score counter with win/loss box next to it -->
-    <div class="row">
-            <div class="col"></div>
-                 <div id = "computerScoreDiv">
-                 </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="computerScoreDiv">
+                </div>
             </div>
-    
-            <div class="col">
-                 <div id = "winsLossesDiv">
-                 </div>
+            <div class="col-md-3">
+                <div id="playerScoreDiv">
+                </div>
             </div>
-    </div>
+            <div class="col-md-3">
+                <div id="winsDiv">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="lossesDiv">
+                </div>
+            </div>
 
-    <!-- Four images of crystals -->
-    <div class="row">
-        <div class="col">
-            <!-- try splitting into four col = to 12 -->
-             <div id = "crystalFamilyDiv">
-                 <button class="btn whitecrystal"><img src="assets/images/whitecrystal.jpg"></button>
-                 <button class="btn bluecrystal"><img src="assets/images/bluecrystal.jpg"></button>
-                <button class="btn greencrystal"><img src="assets/images/greencrystal.jpg"></button>
-                 <button class="btn purplecrystal"><img src="assets/images/purplecrystal.jpg"></button>
 
-             </div>
+        </div>
+
+
+        <!-- Four images of crystals -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <button class="btn whitecrystal">
+                    <img src="assets/images/whitecrystal.jpg">
+                </button>
+
+                <button class="btn bluecrystal">
+                    <img src="assets/images/bluecrystal.jpg">
+                </button>
+
+                <button class="btn greencrystal">
+                    <img src="assets/images/greencrystal.jpg">
+                </button>
+
+                <button class="btn purplecrystal">
+                    <img src="assets/images/purplecrystal.jpg">
+                </button>
+
+            </div>
         </div>
     </div>
 
-    <!-- Player's total score div -->
-    <div class="row">
-        <div class="col">
-            <div id = "playerScoreDiv">
-               
-           
-
-            </div>
-         </div>
-    </div>
-
-</div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src = "assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

@@ -1,27 +1,23 @@
 body{
     text-align: center;
-   
+    margin: 0 auto;
+    background-color: white;
 }
-h1, h4, p{
+h1, h4, p, div{
     font-family: 'Amatic SC', cursive;
 }
 
 h1{
-    font-size: 75px;
+    font-size: 85px;
 }
 
-h4{
-    font-size: 40px;
-}
-
-p{
+h4, div, p{
     font-size: 30px;
 }
 
-
 img{
-    height: 25%;
-    width: 25%;
+    height: 40%;
+    width: 40%;
 }
 
 button{
