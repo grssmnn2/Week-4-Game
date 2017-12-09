@@ -30,13 +30,16 @@ $(document).ready(function () {
         blue = (Math.floor(Math.random() * 11) + 1);
         green = (Math.floor(Math.random() * 11) + 1);
         white = (Math.floor(Math.random() * 11) + 1);
+        // reset userScore to 0
         userScore = 0;
+        // push new score to html
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
     };
     // purple crystal click function
     $(".purplecrystal").on("click", function () {
         // selecting purple button and add data named Purple--given value of var purple
         $(".purplecrystal").data("purple", purple);
+        // new userScore value adds value of purple if clicked
         userScore = userScore + purple;
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
         // if user got to computer score, run wins function, else if user passed computerChoice run lose function
@@ -89,16 +92,18 @@ $(document).ready(function () {
             lose();
         };
     });
-
+    // call win function if user won
     function win() {
         wins++;
+        // push wins to html and alert user of win/loss status
         $("#winsDiv").html("<p>Wins: </p>" + wins);
         alert("You beat the computer!");
         reset();
     };
-
+// call lose function if user lost
     function lose() {
         losses++;
+        // push losses to html and alert user of win/loss status
          $("#lossesDiv").html("<p>Losses: </p>" + losses);
          alert("Looks like the computer outsmarted you this time.");
         reset();
