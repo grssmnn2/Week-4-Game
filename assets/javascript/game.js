@@ -104,8 +104,4 @@ $(document).ready(function () {
         reset();
     };
 
-
-
-
-
 });
