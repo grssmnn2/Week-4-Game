@@ -10,15 +10,15 @@ $(document).ready(function () {
     $("#playerScoreDiv").append("<p>Your Total Score is: </p>" + userScore);
 
     // make computer choose random number from 19-120
-    var computerCount = (Math.floor(Math.random() * 101) + 19);
+    var computerCount = (Math.floor(Math.random() * 120) + 19);
     // send that random number to the Computer Choice div
     $("#computerScoreDiv").append("<p>Computer Choice is: </p>" + computerCount);
 
     // make each crystal image a random number from 1-12
-    var purple = (Math.floor(Math.random() * 11) + 1);
-    var blue = (Math.floor(Math.random() * 11) + 1);
-    var green = (Math.floor(Math.random() * 11) + 1);
-    var white = (Math.floor(Math.random() * 11) + 1);
+    var purple = (Math.floor(Math.random() * 12) + 1);
+    var blue = (Math.floor(Math.random() * 12) + 1);
+    var green = (Math.floor(Math.random() * 12) + 1);
+    var white = (Math.floor(Math.random() * 12) + 1);
 
     // reset function to run restart without refreshing page
     function reset() {
@@ -26,10 +26,10 @@ $(document).ready(function () {
         computerCount = (Math.floor(Math.random() * 101) + 19);
         $("#computerScoreDiv").html("<p>Computer Choice is: </p>" + computerCount);
         // make each crystal image a new random number from 1-12
-        purple = (Math.floor(Math.random() * 11) + 1);
-        blue = (Math.floor(Math.random() * 11) + 1);
-        green = (Math.floor(Math.random() * 11) + 1);
-        white = (Math.floor(Math.random() * 11) + 1);
+        purple = (Math.floor(Math.random() * 12) + 1);
+        blue = (Math.floor(Math.random() * 12) + 1);
+        green = (Math.floor(Math.random() * 12) + 1);
+        white = (Math.floor(Math.random() * 12) + 1);
         // reset userScore to 0
         userScore = 0;
         // push new score to html
