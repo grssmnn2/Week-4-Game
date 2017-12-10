@@ -5,6 +5,7 @@ $(document).ready(function () {
     var userScore = 0;
     var reaction = new Audio("happy.mp3");
     var sad = new Audio("sad.mp3");
+    var boop = new Audio("boop.mp3");
 
     // send these values to appear on html page
     $("#winsDiv").append("<p>Wins: </p>" + wins);
@@ -42,6 +43,8 @@ $(document).ready(function () {
         // selecting purple button and add data named Purple--given value of var purple
         $(".purplecrystal").data("purple", purple);
         // new userScore value adds value of purple if clicked
+        // add sound to button click
+        boop.play();
         userScore = userScore + purple;
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
         // if user got to computer score, run wins function, else if user passed computerChoice run lose function
@@ -55,6 +58,8 @@ $(document).ready(function () {
 
     // blue crystal click function
     $(".bluecrystal").on("click", function () {
+        // add sound to button click
+        boop.play();
         $(".bluecrystal").data("blue", blue);
         userScore = userScore + blue;
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
@@ -69,6 +74,8 @@ $(document).ready(function () {
 
     // green crystal click function
     $(".greencrystal").on("click", function () {
+        // add sound to button click
+        boop.play();
         $(".greencrystal").data("green", green);
         userScore = userScore + green;
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
@@ -84,6 +91,8 @@ $(document).ready(function () {
 
     // white crystal click function
     $(".whitecrystal").on("click", function () {
+        // add sound to button click
+        boop.play();
         $(".whitecrystal").data("white", white);
         userScore = userScore + white;
         $("#playerScoreDiv").html("<p>Your Total Score is: </p>" + userScore);
