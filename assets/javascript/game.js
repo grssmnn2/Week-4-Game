@@ -3,6 +3,8 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
     var userScore = 0;
+    var reaction = new Audio("happy.mp3");
+    var sad = new Audio("sad.mp3");
 
     // send these values to appear on html page
     $("#winsDiv").append("<p>Wins: </p>" + wins);
@@ -94,18 +96,20 @@ $(document).ready(function () {
     });
     // call win function if user won
     function win() {
+        reaction.play();
         wins++;
         // push wins to html and alert user of win/loss status
         $("#winsDiv").html("<p>Wins: </p>" + wins);
-        alert("You beat the computer!");
+        // alert("You beat the computer!");
         reset();
     };
 // call lose function if user lost
     function lose() {
+        sad.play();
         losses++;
         // push losses to html and alert user of win/loss status
          $("#lossesDiv").html("<p>Losses: </p>" + losses);
-         alert("Looks like the computer outsmarted you this time.");
+        //  alert("Looks like the computer outsmarted you this time.");
         reset();
     };
 
